@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+:root {
+	--primary: #d90429;
+	--secondary: #dde5b6;
+
+	--background: #edf2f4;
+	--background-300: #edf2f4;
+
+	--foreground: #111;
+	--foreground-light: #aaa;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: #be0e23;
+		--primary-light: #d90429;
+		--background: #333;
+		--background-300: #3f3f3f;
+		--background-500: #282828;
+
+		--foreground: #eee;
+		--foreground-light: #aaa;
+	}
+}
+
+@theme {
+	--color-primary: var(--primary);
+	--color-primary-light: var(--primary-light);
+	--color-secondary: var(--secondary);
+
+	--color-background: var(--background);
+	--color-background-300: var(--background-300);
+	--color-background-500: var(--background-500);
+
+	--color-foreground: var(--foreground);
+	--color-foreground-light: var(--foreground-light);
+}
+
+body {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background);
+}
