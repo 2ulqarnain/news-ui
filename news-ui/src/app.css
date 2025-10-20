@@ -5,24 +5,22 @@
 	--primary: #d90429;
 	--secondary: #dde5b6;
 
-	--background: #edf2f4;
-	--background-300: #edf2f4;
+	--background-50: oklch(100% 0 none);
+	--background-100: oklch(100% 0 none);
+	--background-200: oklch(100% 0 none);
+	--background-300: oklch(97.015% 0 none);
+	--background-400: oklch(90.67% 0 none);
+	--background-500: oklch(84.522% 0 none);
+	--background-600: oklch(75.721% 0 none);
+	--background-700: oklch(66.655% 0 none);
+	--background-800: oklch(57.268% 0 none);
+	--background-900: oklch(47.478% 0 none);
+	--background-950: oklch(42.393% 0 none);
 
-	--foreground: #111;
-	--foreground-light: #aaa;
-}
+	--background: var(--background-500);
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--primary: #be0e23;
-		--primary-light: #d90429;
-		--background: #333;
-		--background-300: #3f3f3f;
-		--background-500: #282828;
-
-		--foreground: #eee;
-		--foreground-light: #aaa;
-	}
+	--foreground: #ddd;
+	--foreground-light: #888;
 }
 
 @theme {
@@ -31,8 +29,17 @@
 	--color-secondary: var(--secondary);
 
 	--color-background: var(--background);
+	--color-background-50: var(--background-50);
+	--color-background-100: var(--background-100);
+	--color-background-200: var(--background-200);
 	--color-background-300: var(--background-300);
+	--color-background-400: var(--background-400);
 	--color-background-500: var(--background-500);
+	--color-background-600: var(--background-600);
+	--color-background-700: var(--background-700);
+	--color-background-800: var(--background-800);
+	--color-background-900: var(--background-900);
+	--color-background-950: var(--background-950);
 
 	--color-foreground: var(--foreground);
 	--color-foreground-light: var(--foreground-light);
@@ -43,4 +50,39 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: var(--background);
+}
+
+/* Input styles */
+input:focus-visible {
+	outline: none;
+}
+
+/* Table Styles */
+th:not(:first-child, :last-child),
+td {
+	border: 1px solid var(--primary);
+}
+
+th {
+	border-top: none !important;
+}
+
+td:first-child {
+	border-left: none;
+}
+
+td:last-child {
+	border-right: none;
+}
+
+tr:last-child td {
+	border-bottom: none;
+}
+
+tr:last-child td:first-child {
+	border-left: none;
+}
+
+tr:last-child td:last-child {
+	border-right: none;
 }

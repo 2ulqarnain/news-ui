@@ -34,7 +34,7 @@
 </script>
 
 <Button
-	class="mt-7 flex items-center"
+	class="mt-7 flex items-center pr-2"
 	onclick={handleClick}
 	disabled={status === 'doing' || status === 'done'}
 >

@@ -7,11 +7,12 @@
 
 <a
 	href={newsUrl}
-	class="relative m-0 flex break-inside-avoid flex-col overflow-hidden rounded-2xl border border-s-violet-400 border-e-green-400 bg-primary"
+	class="relative m-0 flex break-inside-avoid flex-col overflow-hidden rounded-2xl font-serif text-zinc-600"
 >
-	<div class="h-64"></div>
-	<div class="z-10 mt-auto bg-black/60 p-4 text-xl backdrop-blur-xs">
-		<span>{title}</span>
-	</div>
-	<img src={imageUrl} alt={title} class="absolute z-0 size-full object-cover" />
+	<img src={imageUrl} alt={title} class="z-0 size-full object-cover" />
+	<p
+		class="headline z-10 mt-auto bg-white p-4 text-xl first-letter:text-3xl first-letter:text-primary"
+	>
+		{title}
+	</p>
 </a>
