@@ -7,12 +7,10 @@
 
 <a
 	href={newsUrl}
-	class="relative m-0 flex break-inside-avoid flex-col overflow-hidden rounded-2xl font-serif text-zinc-600"
+	class="news-card flex items-center gap-2 overflow-hidden rounded-xl bg-white hover:z-10 hover:scale-105 hover:bg-primary hover:text-white hover:transition-transform"
 >
-	<img src={imageUrl} alt={title} class="z-0 size-full object-cover" />
-	<p
-		class="headline z-10 mt-auto bg-white p-4 text-xl first-letter:text-3xl first-letter:text-primary"
-	>
+	<img src={imageUrl} alt={title} class="z-0 size-24 min-w-24 bg-primary object-cover" />
+	<p class="headline z-10 line-clamp-2 text-xl">
 		{title}
 	</p>
 </a>

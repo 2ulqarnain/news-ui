@@ -56,33 +56,3 @@ body {
 input:focus-visible {
 	outline: none;
 }
-
-/* Table Styles */
-th:not(:first-child, :last-child),
-td {
-	border: 1px solid var(--primary);
-}
-
-th {
-	border-top: none !important;
-}
-
-td:first-child {
-	border-left: none;
-}
-
-td:last-child {
-	border-right: none;
-}
-
-tr:last-child td {
-	border-bottom: none;
-}
-
-tr:last-child td:first-child {
-	border-left: none;
-}
-
-tr:last-child td:last-child {
-	border-right: none;
-}
